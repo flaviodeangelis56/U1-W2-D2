@@ -94,10 +94,31 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-/*const numeri = [867, 4, 67];
-numeri.sort();
-numeri.reverse();
-console.log(numeri);*/
+const x = 1;
+const y = 34;
+const z = 9;
+if (x >= y) {
+  if (z >= x) {
+    console.log(z, x, y);
+  } else {
+    if (z >= y) {
+      console.log(x, z, y);
+    } else {
+      console.log(x, y, z);
+    }
+  }
+} else {
+  if (z >= y) {
+    console.log(z, y, x);
+  } else {
+    if (z >= x) {
+      console.log(y, z, x);
+    } else {
+      console.log(y, x, z);
+    }
+  }
+}
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
@@ -142,25 +163,28 @@ if (pariDispari === 0) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const me = {
+/*const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-me.push((city = "Toronto"));
-
+const city = { city: "Toronto" };
+const me2 = Object.assign(me, city);
+console.log(me2);*/
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+/*delete me2.lastName;
+console.log(me2);*/
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+/*me.skills.pop();
+console.log(me);*/
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
@@ -179,4 +203,5 @@ console.log(numbers);*/
 numbers.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 numbers.pop();
 numbers.push(100);
+number.slice(number.length-1,1,100)
 console.log(numbers);*/
